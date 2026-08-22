@@ -36,12 +36,11 @@ const App = () => {
         onSubmit={(e) => {
           submitHandler(e);
         }}
-        className="bg-slate-700 h-155 w-185 rounded-4xl mt-30"
+        className="bg-slate-700 h-155 lg:w-185 md:w-185 w-90 lg:rounded-4xl md:rounded-3xl rounded-2xl mt-30"
       >
-        <div className="p-10 flex flex-col justify-center items-center font-medium">
+        <div className="lg:p-10 md:p-8 p-6 flex flex-col justify-center items-center font-medium">
           <input
-            className="bg-white text-black w-full h-80 p-5 rounded-xl mb-10 "
-            className="bg-white text-black w-full h-15 p-5 rounded-xl mb-10 outline-none border-2 border-transparent "
+            className="bg-white text-black w-full h-15 p-5 lg:rounded-xl md:rounded-xl rounded-lg mb-10 outline-none border-2 border-transparent "
             type="text"
             placeholder="ENTER TITLE"
             value={title}
@@ -51,7 +50,7 @@ const App = () => {
           />
 
           <textarea
-            className="bg-white text-black w-full h-80 p-5 rounded-xl mb-10 resize-none outline-none border-2 border-transparent"
+            className="bg-white text-black w-full h-80 p-5 lg:rounded-xl md:rounded-xl rounded-lg mb-10 resize-none outline-none border-2 border-transparent"
             placeholder="ENTER CONTENT"
             value={details}
             onChange={(e) => {
@@ -59,15 +58,15 @@ const App = () => {
             }}
           />
 
-          <button className="bg-blue-400 text-black w-1/2 h-15 p-5 rounded-xl hover:bg-blue-300 active:scale-95 transition-all duration-200 ">
+          <button className="bg-blue-400 text-black w-1/2 h-15 p-5 lg:rounded-xl md:rounded-xl rounded-lg hover:bg-blue-300 active:scale-95 transition-all duration-200">
             ADD NOTES
           </button>
         </div>
       </form>
 
-      <div className=" h-screen w-full p-10 flex flex-col justify-center items-center m-30">
+      <div className=" min-h-screen w-full p-10 flex flex-col justify-center items-center m-30">
         <div className="bg-slate-700 w-full rounded-4xl p-4 border border-gray-400">
-          <h1 className="font-bold text-white text-3xl flex flex-col justify-center items-center mt-8 p-3">
+          <h1 className="font-bold text-white text-2xl flex flex-col justify-center items-center mt-8 lg:px-3 md:px-4 px-5 lg:text-3xl md:text-3xl whitespace-nowrap">
             YOUR NOTES
           </h1>
 
